@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  	<title>Kevin Paul Martin</title>
+  	<meta charset="UTF-8">
+  	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  	<link rel="stylesheet" href="css/style.css">
+  	<link rel="stylesheet" href="css/bootstrap.css">
+  	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  	<script type="text/javascript" src="js/jQuery.js"></script>
+  	<style>
+  		html{
+	  		height: 100%;
+  		}
+  		
+  		.crystal{
+	  		max-width: 400px;
+  		}
+  	
+  		body{
+	  		position: relative;
+	  		height: 100%;
+	  		margin: 0;
+	  		font-family: 'Open Sans', sans-serif;
+  		}
+  		
+  		.content-panel > div{
+	  		margin-left: 20px;
+	  		margin-right: 20px;
+  		}
+  		
+  		#skills-panel{
+	  		display: none;
+  		}
+  		
+  		#gallery-panel > .row > div{
+	  		margin-bottom: 30px;
+  		}
+  		
+  		.side-nav{
+	  		width: 100px;
+	  		height: 100%;
+	  		background: rgba(255,255,255,0.1);
+	  		display: inline-block;
+	  		position: fixed;
+	  		top: 0;
+	  		left: 0;
+  		}
+  		
+  		.side-nav > a:nth-child(1){
+	  		margin-bottom: 40px;
+	  		display: block;
+  		}
+  		
+  		.canvas{
+	  		max-width: 100%;
+	  		
+  		}
+  		
+  		.side-nav > a:nth-child(n+2){
+	  		color: white;
+	  		display: block;
+	  		text-align: center;
+	  		width: 100%;
+	  		margin-bottom: 40px;
+	  		font-size: 18px;
+	  		text-decoration: none;
+	  		cursor: pointer;
+	  		border-left: 0px solid white;
+	  		border-right: 0px solid white;
+	  		transition: all .2s;
+	  		-webkit-transition: all .2s;
+  		}
+  		
+  		.side-nav > a:nth-child(n+2):hover{
+  			border-left: 4px solid white;
+  			border-right: 4px solid white;
+  			background: rgba(0,0,0,0.1);
+  		}
+  		
+  		.side-nav> a.active{
+	  		border-left: 4px solid white;
+  			border-right: 4px solid white;
+  			background: rgba(0,0,0,0.1);
+  		}
+  		
+  		.brand > img{
+	  		margin-left: 12px;
+	  		margin-top: 12px;
+	  		transition: all .3s;
+	  		-webkit-transition: all .3s;
+	  		
+  		}
+  		
+  		.brand > img:hover{
+	  		-webkit-transform: scale(1.05);
+	  		transform: scale(1.05);
+	  		
+  		}
+  		.content-panel{
+	  		width: 100%;
+	  		height: auto;
+	  		display: inline-block;
+	  		margin-left: 100px;
+	  		text-align: center;
+	  		color: white;
+	  		position: relative;
+  		}
+  		
+  		.content-shadow{
+	  		width: 100%;
+	  		height: 100%;
+	  		background: rgba(0,0,0,0.4);
+	  		position: fixed;
+	  		top: 0;
+  		}
+  		
+  		
+  		.content-panel > div:nth-child(1){
+
+			margin-top: 20px;	  		
+  		}
+  		
+  		#home-panel p{
+	  		max-width: 550px;
+	  		margin: 0 auto;
+	  		font-size: 20px;
+  		}
+  		
+  		#skills-panel p{
+	  		font-size: 18px;
+  		}
+  		
+  		@media (max-width: 767px){
+	  		.side-nav{
+		  		display: none;
+	  		}
+  		}
+  	</style>
+  </head>
+  
+  <body>
+  	<img src="img/blur2.png" style="width:100%;height:100%;position:fixed;z-index:-1; display:block;top:0;">
+  	<nav class="side-nav">
+  		<a class="brand home-toggle" href="#home">
+  			<img src="img/kpm-logo.png" style="width:76px; height:76px;">
+  		</a>
+  		<a class="skills-toggle" href="#skills">Skills</a>
+  		<a href="http://bit.ly/18PT9hI" target="_blank">Resumé</a>
+  		<a>Contact</a>
+  	</nav>
+  	<div class="content-panel content-shadow"></div>
+  	<div class="content-panel">
+  		<div id="gallery-panel">
+	  		<div class="row">
+	  			<div class="col-lg-3 col-md-4 col-sm-6 col xs-12">
+	  				<img class="canvas" src="img/spacetime.png">
+	  			</div>
+	  			<div class="col-lg-3 col-md-4 col-sm-6 col xs-12">
+	  				<img class="canvas" src="img/nature.png">
+	  			</div>
+	  			<div class="col-lg-3 col-md-4 col-sm-6 col xs-12">
+	  				<img class="canvas" src="img/sync-icon.png">
+	  			</div>
+	  			<div class="col-lg-3 col-md-4 col-sm-6 col xs-12">
+	  				<img class="canvas" src="img/piranha_plant3.png">
+	  			</div>
+	  			<div class="col-lg-3 col-md-4 col-sm-6 col xs-12">
+	  				<img class="canvas" src="img/luxx-portfolio.png">
+	  			</div>
+	  			<div class="col-lg-3 col-md-4 col-sm-6 col xs-12">
+	  				<img class="canvas" src="img/clock.png">
+	  			</div>
+	  			<div class="col-lg-3 col-md-4 col-sm-6 col xs-12">
+	  				<img class="canvas" src="img/one-liner.png">
+	  			</div>
+	  			<div class="col-lg-3 col-md-4 col-sm-6 col xs-12">
+	  				<img class="canvas" src="img/sun.png">
+	  			</div>
+	  			<div class="col-lg-3 col-md-4 col-sm-6 col xs-12">
+	  				<img class="canvas" src="img/lazy-sunday.png">
+	  			</div>
+	  			<div class="col-lg-3 col-md-4 col-sm-6 col xs-12">
+	  				<img class="canvas" src="img/luxxbannerinsta.png">
+	  			</div>
+	  			<div class="col-lg-3 col-md-4 col-sm-6 col xs-12">
+	  				<img class="canvas" src="img/skej.png">
+	  			</div>
+	  			<div class="col-lg-3 col-md-4 col-sm-6 col xs-12">
+	  				<img class="canvas" src="img/Ronin-Frog.png">
+	  			</div>
+	  			<div class="col-lg-3 col-md-4 col-sm-6 col xs-12">
+	  				<img class="canvas" src="img/callpod-insta.png">
+	  			</div>
+	  		</div>	
+  		</div>
+  		
+  		<div id="skills-panel">
+  			<div class="row">
+  				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  					<h1>Web Development</h1>
+  					<p>I use HTML5 and CSS3 in order to develop rich, responsive, and intuitive web interfaces. I went to an advanced trade school in Chicago where I was trained by the minds of people that work at companies like 37 Signals and Groupon. While there I learned how to engineer high-quality websites designed to look good on Desktops, Tablets, and Phones. I am familiar with modern-web practices and frameworks including Twitter Bootstrap, jQuery, and others. </p>
+  					
+  				</div>
+  				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  					<h1>UI Design</h1>
+  					<p>I use tools like Balsamiq and Photoshop to mockup and plan clean and simple user-interfaces. In terms of UI Development I always stick by the phrase "simplicity is key". I'm a strong advocate of current trends like <em>Flat Design</em>. Clean, flat, minimalist designs show the maturity of UI design as craft. By trimming away skeumorphic fat and focusing on content. </p>
+  				</div>
+  				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  					<h1>Graphic Design</h1>
+  					<p>Using Adobe Photoshop I am able to render high resolution graphics. Branding, Logos, Business Cards, Invitations, Posters, Banners, Billboards, Labels, etc... I can draw it all. 
+  				</div>
+  			</div>
+  			<div class="row">
+  				<div class="col-lg-2 col-md-2 col-sm-2"></div>
+  				<div class="col-lg-8 col-md-8 col-sm-8">
+	  				<p style="max-width:100%;">
+	  					When it comes to User-Interfaces and High Quality graphics... I'm obsessed. If I'm not drawing or coding I'm usually scanning dribbble for inspiration. I really believe that it is the job of the artist to humanize technology. By creating simple, clean interfaces, designers are able to help humanity better understand and thus use technology.
+	  				</p>
+  				</div>
+  				<div class="col-lg-2 col-md-2 col-sm-2"></div>
+  			</div>
+  		</div>
+  	</div>
+  	
+  	<script>
+  		$( document ).ready(function() {
+  			var isMobile = false;
+  			if($(window).width() < 767){
+	  			isMobile = true;
+  			}
+  			
+  			if(isMobile == false){
+	  			var contentWindowWidth = $(window).width() - 100;
+	  			$('.content-panel').css({"width": contentWindowWidth});	
+  			}
+  			else{
+				$('.content-panel').css({"width": "100%", "margin-left":"0"});
+	  		};
+  			
+  			$(window).resize(function(){
+	  			if($(window).width() < 767){
+		  			isMobile = true;
+	  			}
+	  			else{
+	  				isMobile = false;
+	  			};
+	  			
+  				if(isMobile == false){
+	  				var contentWindowWidth = $(window).width() - 100;
+	  				$('.content-panel').css({"width": contentWindowWidth, "margin-left":"100px"});	
+	  			}
+	  			else{
+					$('.content-panel').css({"width": "100%", "margin-left":"0"});
+	  			};
+	  			
+  			})
+  			
+  			$('.home-toggle').click(function(){
+	  			$('.content-panel').children().fadeOut();
+	  			$('.content-panel').children().promise().done(function(){
+	  				$('#gallery-panel').fadeIn();
+	  			});
+	  			$('.side-nav').children().removeClass('active');
+  			});
+  			
+  			
+  			$('.skills-toggle').click(function(){
+	  			$('.content-panel').children().fadeOut();
+	  			$('.content-panel').children().promise().done(function(){
+		  			$('#skills-panel').fadeIn();
+	  			})
+	  			$('.side-nav').children().removeClass('active');
+	  			$(this).addClass('active');
+  			});
+		});
+  	</script>
+  </body>
+</html>
