@@ -377,7 +377,7 @@
 	  			$('.side-nav').children().removeClass('active');
   			});
   			
-  			$('.home-toggle').promise().done(function(){
+  			$('#home-panel').promise().done(function(){
 	  			var bannerHeight = $('.banner').height();
 	  			$('.banner').css({"margin-top":(-1 * bannerHeight/2), "top": $(window).height()/2});
   			});
