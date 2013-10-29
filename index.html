@@ -55,6 +55,7 @@
 	  		position: fixed;
 	  		top: 0;
 	  		left: 0;
+	  		min-height: 705px;
   		}
   		
   		.banner{
@@ -197,7 +198,7 @@
 	  		position: absolute;
 			width: 100%;
 			bottom: 10px;
-			font-size: 72px;
+			font-size: 64px;
   		}
   		
   		.mobile-dash a{
@@ -373,14 +374,14 @@
 	  			$('.content-panel').children().fadeOut();
 	  			$('.content-panel').children().promise().done(function(){
 	  				$('#home-panel').fadeIn();
+	  				$('#home-panel').promise().done(function(){
+			  			var bannerHeight = $('.banner').height();
+			  			$('.banner').css({"margin-top":(-1 * bannerHeight/2), "top": $(window).height()/2});
+		  			});
 	  			});
 	  			$('.side-nav').children().removeClass('active');
   			});
   			
-  			$('#home-panel').promise().done(function(){
-	  			var bannerHeight = $('.banner').height();
-	  			$('.banner').css({"margin-top":(-1 * bannerHeight/2), "top": $(window).height()/2});
-  			});
   			
   			$('.gallery-toggle').click(function(){
 	  			$('.content-panel').children().fadeOut();
